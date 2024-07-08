@@ -1,25 +1,38 @@
 # https://adventofcode.com/2015/day/4
 
+import hashlib
+
+
 def main():
     with open("2015/examples/ex_04.txt", "r") as f:
-        ex = list(map(str, f.read().strip().split()))
+        ex = f.read().strip()
 
-    # assert part_one(ex) == 1
-    # assert part_two(ex) == 1
+    assert part_one(ex) == 1048970
+    assert part_two(ex) == 5714438
 
-    # with open("2015/input/inp_04.txt", "r") as f:
-    #     inp = list(map(str, f.read().strip().split()))
+    with open("2015/input/inp_04.txt", "r") as f:
+        inp = f.read().strip()
 
-    print("Part one:", part_one(ex))
-    # print("Part two:", part_two(inp))
-
-
-def part_one(entries):
-    return entries[0]
+    print("Part one:", part_one(inp))
+    print("Part two:", part_two(inp))
 
 
-def part_two(entries):
-    return entries[0]
+def part_one(key: str):
+    for i in range(int(1E10)):
+        hash = hashlib.md5((key + str(i)).encode()).hexdigest()
+        if hash.startswith("00000"):
+            break
+
+    return i
+
+
+def part_two(key: str):
+    for i in range(int(1E10)):
+        hash = hashlib.md5((key + str(i)).encode()).hexdigest()
+        if hash.startswith("000000"):
+            break
+
+    return i
 
 
 if __name__ == '__main__':
