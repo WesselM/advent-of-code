@@ -1,25 +1,48 @@
 # https://adventofcode.com/2016/day/5
 
+
+import hashlib
+
+
 def main():
     with open("2016/examples/ex_05.txt", "r") as f:
-        ex = list(map(str, f.read().strip().split()))
+        ex = f.read().strip()
 
-    # assert part_one(ex) == 1
-    # assert part_two(ex) == 1
+    assert part_one(ex) == "18f47a30"
+    assert part_two(ex) == "05ace8e3"
 
-    # with open("2016/input/inp_05.txt", "r") as f:
-    #     inp = list(map(str, f.read().strip().split()))
+    with open("2016/input/inp_05.txt", "r") as f:
+        inp = f.read().strip()
 
-    print("Part one:", part_one(ex))
-    # print("Part two:", part_two(inp))
-
-
-def part_one(entries):
-    return entries[0]
+    print("Part one:", part_one(inp))
+    print("Part two:", part_two(inp))
 
 
-def part_two(entries):
-    return entries[0]
+def part_one(door_id):
+    password = ""
+    for i in range(int(1E10)):
+        hash = hashlib.md5((door_id + str(i)).encode()).hexdigest()
+        if hash.startswith("0" * 5):
+            password += hash[5]
+        if len(password) >= 8:
+            break
+
+    return password
+
+
+def part_two(door_id):
+    password = ["#" for _ in range(8)]
+    for i in range(int(1E10)):
+        hash = hashlib.md5((door_id + str(i)).encode()).hexdigest()
+        if hash.startswith("0" * 5) and hash[5].isdigit():
+            index = int(hash[5])
+            if index < len(password) and password[index] == "#":
+                password[index] = hash[6]
+
+        if "#" not in password:
+            break
+
+    return "".join(password)
 
 
 if __name__ == '__main__':

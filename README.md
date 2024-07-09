@@ -79,9 +79,9 @@ Solutions for the [Advent of Code](https://adventofcode.com/) programming puzzle
 | :-----------------: | :------: | :------: | :---------: |
 | [1](2016/day_01.py) |   done   |   done   |   python    |
 | [2](2016/day_02.py) |   done   |   done   |   python    |
-| [3](2016/day_03.py) |   todo   |   todo   |   python    |
-| [4](2016/day_04.py) |   todo   |   todo   |   python    |
-| [5](2016/day_05.py) |   todo   |   todo   |   python    |
+| [3](2016/day_03.py) |   done   |   done   |   python    |
+| [4](2016/day_04.py) |   done   |   done   |   python    |
+| [5](2016/day_05.py) |   done   |   done   |   python    |
 
 ### [2015](2015)
 
