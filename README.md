@@ -57,10 +57,10 @@ Solutions for the [Advent of Code](https://adventofcode.com/) programming puzzle
 
 |                   Day                    | Part one | Part two |       Language(s)        |
 | :--------------------------------------: | :------: | :------: | :----------------------: |
-| [1](https://adventofcode.com/2018/day/1) |  *todo*  |  *todo*  | [python](2018/day_01.py) |
-| [2](https://adventofcode.com/2018/day/2) |  *todo*  |  *todo*  | [python](2018/day_02.py) |
-| [3](https://adventofcode.com/2018/day/3) |  *todo*  |  *todo*  | [python](2018/day_03.py) |
-| [4](https://adventofcode.com/2018/day/4) |  *todo*  |  *todo*  | [python](2018/day_04.py) |
+| [1](https://adventofcode.com/2018/day/1) | **done** | **done** | [python](2018/day_01.py) |
+| [2](https://adventofcode.com/2018/day/2) | **done** | **done** | [python](2018/day_02.py) |
+| [3](https://adventofcode.com/2018/day/3) | **done** | **done** | [python](2018/day_03.py) |
+| [4](https://adventofcode.com/2018/day/4) | **done** | **done** | [python](2018/day_04.py) |
 | [5](https://adventofcode.com/2018/day/5) |  *todo*  |  *todo*  | [python](2018/day_05.py) |
 
 ### [2017](2017)
