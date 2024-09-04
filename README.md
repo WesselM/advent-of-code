@@ -47,8 +47,8 @@ Solutions for the [Advent of Code](https://adventofcode.com/) programming puzzle
 
 |                   Day                    | Part one | Part two |       Language(s)        |
 | :--------------------------------------: | :------: | :------: | :----------------------: |
-| [1](https://adventofcode.com/2019/day/1) |  *todo*  |  *todo*  | [python](2019/day_01.py) |
-| [2](https://adventofcode.com/2019/day/2) |  *todo*  |  *todo*  | [python](2019/day_02.py) |
+| [1](https://adventofcode.com/2019/day/1) | **done** | **done** | [python](2019/day_01.py) |
+| [2](https://adventofcode.com/2019/day/2) | **done** | **done** | [python](2019/day_02.py) |
 | [3](https://adventofcode.com/2019/day/3) |  *todo*  |  *todo*  | [python](2019/day_03.py) |
 | [4](https://adventofcode.com/2019/day/4) |  *todo*  |  *todo*  | [python](2019/day_04.py) |
 | [5](https://adventofcode.com/2019/day/5) |  *todo*  |  *todo*  | [python](2019/day_05.py) |
