@@ -2,24 +2,49 @@
 
 def main():
     with open("2021/examples/ex_02.txt", "r") as f:
-        ex = list(map(str, f.read().strip().split()))
+        ex = list(map(str, f.read().strip().split("\n")))
 
-    # assert part_one(ex) == 1
-    # assert part_two(ex) == 1
+    assert part_one(ex) == 150
+    assert part_two(ex) == 900
 
-    # with open("2021/input/inp_02.txt", "r") as f:
-    #     inp = list(map(str, f.read().strip().split()))
+    with open("2021/input/inp_02.txt", "r") as f:
+        inp = list(map(str, f.read().strip().split("\n")))
 
-    print("Part one:", part_one(ex))
-    # print("Part two:", part_two(inp))
-
-
-def part_one(entries):
-    return entries[0]
+    print("Part one:", part_one(inp))
+    print("Part two:", part_two(inp))
 
 
-def part_two(entries):
-    return entries[0]
+def part_one(commands: str):
+    horizonal_pos = depth = 0
+    for command in commands:
+        action = command.split(" ")[0]
+        units = int(command.split(" ")[1])
+        match action:
+            case 'forward':
+                horizonal_pos += units
+            case 'down':
+                depth += units
+            case 'up':
+                depth -= units
+
+    return horizonal_pos * depth
+
+
+def part_two(commands: str):
+    horizonal_pos = depth = aim = 0
+    for command in commands:
+        action = command.split(" ")[0]
+        units = int(command.split(" ")[1])
+        match action:
+            case 'forward':
+                horizonal_pos += units
+                depth += aim * units
+            case 'down':
+                aim += units
+            case 'up':
+                aim -= units
+
+    return horizonal_pos * depth
 
 
 if __name__ == '__main__':
