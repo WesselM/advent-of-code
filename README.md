@@ -29,9 +29,9 @@ Solutions for the [Advent of Code](https://adventofcode.com/) programming puzzle
 | :--------------------------------------: | :------: | :------: | :----------------------: |
 | [1](https://adventofcode.com/2021/day/1) | **done** | **done** | [python](2021/day_01.py) |
 | [2](https://adventofcode.com/2021/day/2) | **done** | **done** | [python](2021/day_02.py) |
-| [3](https://adventofcode.com/2021/day/3) |  *todo*  |  *todo*  | [python](2021/day_03.py) |
-| [4](https://adventofcode.com/2021/day/4) |  *todo*  |  *todo*  | [python](2021/day_04.py) |
-| [5](https://adventofcode.com/2021/day/5) |  *todo*  |  *todo*  | [python](2021/day_05.py) |
+| [3](https://adventofcode.com/2021/day/3) | **done** | **done** | [python](2021/day_03.py) |
+| [4](https://adventofcode.com/2021/day/4) | **done** | **done** | [python](2021/day_04.py) |
+| [5](https://adventofcode.com/2021/day/5) | **done** | **done** | [python](2021/day_05.py) |
 
 ### [2020](2020)
 
