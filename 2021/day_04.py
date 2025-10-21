@@ -7,8 +7,8 @@ def main():
     with open("2021/examples/ex_04.txt", "r") as f:
         ex = list(map(str, f.read().strip().split("\n\n")))
 
-    # assert part_one(ex) == 1
-    # assert part_two(ex) == 1
+    assert part_one(ex) == 4512
+    assert part_two(ex) == 1924
 
     with open("2021/input/inp_04.txt", "r") as f:
         inp = list(map(str, f.read().strip().split("\n\n")))
