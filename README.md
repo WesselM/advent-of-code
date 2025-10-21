@@ -19,7 +19,7 @@ Solutions for the [Advent of Code](https://adventofcode.com/) programming puzzle
 | :--------------------------------------: | :------: | :------: | :----------------------: |
 | [1](https://adventofcode.com/2022/day/1) | **done** | **done** | [python](2022/day_01.py) |
 | [2](https://adventofcode.com/2022/day/2) | **done** | **done** | [python](2022/day_02.py) |
-| [3](https://adventofcode.com/2022/day/3) |  *todo*  |  *todo*  | [python](2022/day_03.py) |
+| [3](https://adventofcode.com/2022/day/3) | **done** | **done** | [python](2022/day_03.py) |
 | [4](https://adventofcode.com/2022/day/4) |  *todo*  |  *todo*  | [python](2022/day_04.py) |
 | [5](https://adventofcode.com/2022/day/5) |  *todo*  |  *todo*  | [python](2022/day_05.py) |
 
